@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_shape"
+
+    >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/time_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/time"
+                android:textSize="20sp"
+                android:textColor="@color/for_text"
+                android:fontFamily="@font/italic_font"
+                android:layout_marginStart="15dp"
+
+                android:checked="true"/>
+
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/repetition_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/repetitions"
+                android:textSize="20sp"
+                android:textColor="@color/for_text"
+                android:fontFamily="@font/italic_font"
+                android:layout_marginStart="15dp"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:background="@color/separator"
+            />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/mode_setting_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.example.armwrestling.TimeLimitFragment"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+
+            />
+        <View
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:background="@color/separator"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/random"
+
+                android:textSize="20sp"
+
+                android:textColor="@color/for_text"
+                android:fontFamily="@font/italic_font"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/is_random_sw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:background="@color/separator"/>
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/min_max_time_setting_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            />
+        <View
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+            android:background="@color/separator"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="15dp"
+            android:text="@string/voice"
+            android:textColor= "@color/for_secondary_text"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/right_rounded_corners"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+
+                android:background="@drawable/male"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/name_of_voice_pack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+
+                android:text="@string/name"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:fontFamily="@font/italic_font"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/change_voice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_arrow_1"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

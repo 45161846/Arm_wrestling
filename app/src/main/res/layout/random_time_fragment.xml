@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_border"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="10dp"
+
+        android:text="@string/time_minimum"
+        android:textColor="@color/for_text"
+        android:textSize="20sp"
+        android:fontFamily="@font/italic_font"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/min_time_et"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:text="@string/default_min_time"
+        android:gravity="center"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="20sp"
+        android:textColor="@color/for_text"
+
+        android:layout_marginStart="4dp"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+
+        android:text="@string/time_maximum"
+        android:textColor="@color/for_text"
+        android:textSize="20sp"
+        android:fontFamily="@font/italic_font"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/max_time_et"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:text="@string/default_max_time"
+        android:gravity="center"
+        android:background="@drawable/custom_edit_text"
+        android:textSize="20sp"
+        android:textColor="@color/for_text"
+
+        android:layout_marginStart="4dp"
+        />
+</LinearLayout>

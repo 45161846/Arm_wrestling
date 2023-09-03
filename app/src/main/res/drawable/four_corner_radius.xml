@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/buttons"/>
+            <stroke
+                android:width="2.3dp"
+                android:color="@color/teal_200" />
+            <corners android:topLeftRadius="30dp" android:topRightRadius="30dp"
+                android:bottomLeftRadius="0.1dp" android:bottomRightRadius="0.1dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/buttons"/>
+            <stroke
+                android:width="2.3dp"
+                android:color="@color/buttons" />
+            <corners android:topLeftRadius="30dp" android:topRightRadius="30dp"
+                android:bottomLeftRadius="0.1dp" android:bottomRightRadius="0.1dp"/>
+        </shape>
+    </item>
+
+</selector>
+    <!--    <solid-->
+    <!--        android:color="@color/buttons"-->
+    <!--        />-->
+    <!--    <stroke-->
+    <!--        android:width="2.3dp"-->
+    <!--        android:color="@color/teal_200" />-->
+
+    <!--    <size-->
+    <!--        android:width="200dp"-->
+    <!--        android:height="200dp"/>-->
